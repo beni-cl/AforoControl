@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "645819801557",
+    "project_id": "controldeaforo-86e4c",
+    "storage_bucket": "controldeaforo-86e4c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645819801557:android:61f4ef6e027336aeaaa75c",
+        "android_client_info": {
+          "package_name": "cl.inacap.aforocontrol"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY0nRBhGb_NIveZTg3Auw6R-ZtLWzPYvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

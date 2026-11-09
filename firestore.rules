@@ -1,0 +1,36 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function logueado() {
+      return request.auth != null;
+    }
+
+    function esAdmin() {
+      return logueado() &&
+        get(/databases/$(database)/documents/roles/$(request.auth.token.email)).data.rol == 'admin';
+    }
+
+    match /roles/{correo} {
+      allow read: if logueado() && request.auth.token.email == correo;
+      allow write: if false;
+    }
+
+    // simulador de componentes IoT donde el admin puede crear y cambiar todo y el guardia solo cambiar sensores
+    match /nodo/{sala} {
+      allow read: if logueado();
+      allow create: if esAdmin();
+      allow update: if esAdmin() ||
+        (logueado() && request.resource.data.diff(resource.data).affectedKeys()
+                         .hasOnly(['aforo', 'alertaVibracion', 'actualizado']));
+      allow delete: if false;
+    }
+
+    match /eventos/{id} {
+      allow read: if logueado();
+      allow create: if logueado() && request.resource.data.usuario == request.auth.token.email;
+      allow update, delete: if false;
+    }
+  }
+}
