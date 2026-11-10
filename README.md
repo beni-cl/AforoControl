@@ -46,3 +46,11 @@ Instalar en dos celulares (o celular + emulador). Entrar como Admin en uno y com
 - Control de acceso por rol en la app **y** en las reglas de Firestore (el Guardia no puede enviar comandos aunque modifique la app).
 - El historial no se puede editar ni borrar (trazabilidad).
 - Mensaje de error genérico en el login; `allowBackup=false`; solo permisos de red.
+
+- Mockups
+
+- <img width="428" height="975" alt="image" src="https://github.com/user-attachments/assets/c12e9636-7e22-47a2-891b-863388d9b1ee" />
+<img width="428" height="975" alt="image" src="https://github.com/user-attachments/assets/e9c3ea95-3fa3-49fb-8c13-816782b84f68" />
+<img width="428" height="975" alt="image" src="https://github.com/user-attachments/assets/38d6528c-5075-4ca5-aa72-7d254d111157" />
+<img width="428" height="975" alt="image" src="https://github.com/user-attachments/assets/612278f9-c2cc-4dce-b28d-26cc87383309" />
+
