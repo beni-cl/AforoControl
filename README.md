@@ -1,4 +1,4 @@
-# AforoControl IoT
+# AforoControl IoT y mockups al final
 
 App Android (Kotlin + Jetpack Compose + Firebase) para monitorear y controlar el aforo de una sala técnica.
 Evaluación 2 de TI3042 – Aplicaciones Móviles para IoT. En esta etapa el nodo IoT (Arduino UNO R4 WiFi) está **simulado** en Firestore; en la EV3 se reemplaza por el Arduino real.
@@ -47,7 +47,7 @@ Instalar en dos celulares (o celular + emulador). Entrar como Admin en uno y com
 - El historial no se puede editar ni borrar (trazabilidad).
 - Mensaje de error genérico en el login; `allowBackup=false`; solo permisos de red.
 
-- Mockups
+Mockups
 
 - <img width="428" height="975" alt="image" src="https://github.com/user-attachments/assets/c12e9636-7e22-47a2-891b-863388d9b1ee" />
 <img width="428" height="975" alt="image" src="https://github.com/user-attachments/assets/e9c3ea95-3fa3-49fb-8c13-816782b84f68" />
